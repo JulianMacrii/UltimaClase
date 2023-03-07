@@ -1,0 +1,10 @@
+package org.julian.app.patio;
+
+public class EjemploModificadores {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
