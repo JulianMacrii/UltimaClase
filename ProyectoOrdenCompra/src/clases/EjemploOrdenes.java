@@ -22,26 +22,28 @@ public class EjemploOrdenes {
 		productos p12 = new productos ("101","BBB", 2);
 		
 		OrdenCompra OC = new OrdenCompra ("Venta de cosas");
-		
 		OrdenCompra OC2= new OrdenCompra ("Venta de letras");
-		
 		OrdenCompra OC3 = new OrdenCompra ("Venta de numeros");
-		
+
 		OC.addProducto(p1);
 		OC.addProducto(p2);
 		OC.addProducto(p3);
 		OC.addProducto(p4);
-		
+		OC.setCliente(c1);
 		OC2.addProducto(p5);
 		OC2.addProducto(p6);
 		OC2.addProducto(p7);
 		OC2.addProducto(p8);
-		
+		OC2.setCliente(c1);
 		OC3.addProducto(p9);
 		OC3.addProducto(p10);
 		OC3.addProducto(p11);
 		OC3.addProducto(p12);
+		OC3.setCliente(c1);
 		
+		System.out.println();
+		System.out.println(OC.toString());
+		System.out.println();
 		productos [] productos = OC.getProductos();
 		for(productos p : productos) {
 			System.out.println(p.getFabricante() + " " + p.getNombre() + " " + p.getPrecio());
@@ -50,7 +52,9 @@ public class EjemploOrdenes {
 		System.out.println();
 		
 		OC.sumar();
-		
+		System.out.println();
+		System.out.println(OC2.toString());
+		System.out.println();
 		productos [] productos2 = OC2.getProductos();
 		for(productos p : productos2) {
 			System.out.println(p.getFabricante() + " " + p.getNombre() + " " + p.getPrecio());
@@ -59,7 +63,8 @@ public class EjemploOrdenes {
 		OC2.sumar();
 		
 		System.out.println();
-		
+		System.out.println(OC3.toString());
+		System.out.println();
 		productos [] productos3 = OC3.getProductos();
 		for(productos p : productos3) {
 			System.out.println(p.getFabricante() + " " + p.getNombre() + " " + p.getPrecio());
@@ -67,7 +72,8 @@ public class EjemploOrdenes {
 		OC3.sumar();
 		
 
-		
+
+
 		
 	}
 

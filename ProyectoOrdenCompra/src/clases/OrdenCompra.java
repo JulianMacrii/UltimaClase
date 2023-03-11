@@ -6,15 +6,19 @@ import java.util.Date;
 
 public class OrdenCompra {
 
-	private Integer identificador;
+	private int identificador;
 	private String descripcion;
-	private Date fecha;
+	private Date fecha = new Date();
 	private cliente Cliente;
 	private productos[] productos = new productos[4];
 	private int nroproducto = 0, sum;
 	
+	private static int ultimoId;
+	
+	
 	public OrdenCompra(String descripcion) {
 		this.descripcion = descripcion;
+		this.identificador = ++ultimoId;
 	}
 
 	
@@ -35,13 +39,12 @@ public class OrdenCompra {
 	}
 
 	
-
 	
 	@Override
 	public String toString() {
 		return "OrdenCompra [identificador=" + identificador + ", descripcion=" + descripcion + ", fecha=" + fecha
-				+ ", Cliente=" + Cliente + ", productos=" + Arrays.toString(productos) + ", nroproducto=" + nroproducto
-				+ ", sum=" + sum + "]";
+				+ ", Cliente=" + Cliente.getNombre() + " " + Cliente.getApellido() + ", nroproducto=" + nroproducto
+				+ "]";
 	}
 
 
