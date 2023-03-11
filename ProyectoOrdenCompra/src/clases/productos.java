@@ -3,7 +3,7 @@ package clases;
 public class productos {
 
 	private String fabricante, nombre;
-	private int precio,sum;
+	private int precio;
 	
 	
 	public productos(String fabricante, String nombre, int precio) {

@@ -10,26 +10,25 @@ public class OrdenCompra {
 	private String descripcion;
 	private Date fecha;
 	private cliente Cliente;
-	private productos[] productos;
-	private int nroproducto, sum;
+	private productos[] productos = new productos[4];
+	private int nroproducto = 0, sum;
 	
-	public OrdenCompra(Integer identificador, String descripcion, Date fecha, cliente cliente) {
-		super();
-		this.identificador = identificador;
+	public OrdenCompra(String descripcion) {
 		this.descripcion = descripcion;
-		this.fecha = fecha;
-		Cliente = cliente;
 	}
 
 	
-	public void addProducto (productos producto) {
-		productos[nroproducto] = producto;
-		nroproducto++;	
+	public void addProducto (productos nuevop) {
+		if(nroproducto < 4) {
+			productos[nroproducto] = nuevop;
+			nroproducto++;
+		}
+		
 	}
 	
 
-	public void sumar (productos p) {
-		for(productos p1 : productos) {
+	public void sumar () {
+		for(productos p : productos) {
 			sum += p.getPrecio();
 		}
 		System.out.println("La suma de los productos es: " + sum);
