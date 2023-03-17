@@ -38,6 +38,13 @@ public class OrdenCompra {
 		System.out.println("La suma de los productos es: " + sum);
 	}
 
+	public void imprimir() {
+			for(productos p : productos) {
+				System.out.println((p.getFabricante() + " " + p.getNombre() + " " + p.getPrecio()));
+			}
+					
+		
+		}
 	
 	
 	@Override

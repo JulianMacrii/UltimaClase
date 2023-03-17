@@ -45,11 +45,7 @@ public class EjemploOrdenes {
 		System.out.println(OC.toString());
 		System.out.println();
 		
-		productos [] productos = OC.getProductos();
-		for(productos p : productos) {
-			System.out.println(p.getFabricante() + " " + p.getNombre() + " " + p.getPrecio());
-		}
-		System.out.println();
+		OC.imprimir();
 		OC.sumar();
 		
 		
@@ -57,36 +53,18 @@ public class EjemploOrdenes {
 		System.out.println(OC2.toString());
 		System.out.println();
 		
-		productos [] productos2 = OC2.getProductos();
-		for(productos p : productos2) {
-			System.out.println(p.getFabricante() + " " + p.getNombre() + " " + p.getPrecio());
-		}
 		
+		OC2.imprimir();
 		OC2.sumar();
+		
+		OC.imprimir();
+		OC3.sumar();
+
 		
 		System.out.println();
 		System.out.println(OC3.toString());
 		System.out.println();
-		productos [] productos3 = OC3.getProductos();
-		for(productos p : productos3) {
-			System.out.println(p.getFabricante() + " " + p.getNombre() + " " + p.getPrecio());
-		}
-		OC3.sumar();
-		
+	}
 
-		
-	}
-	/*
-	 * En el main : imprimir(OC) | imprimir(OC2) / imprimir(OC3)
-	 * 
-	public static void imprimir(OrdenCompra orden) {
-		productos[] productosAux = orden.getProductos();
-		for(productos p : productosAux) {
-			System.out.println((p.getFabricante() + " " + p.getNombre() + " " + p.getPrecio()));
-		}
-				
-	
-	}
-*/
 }
 
