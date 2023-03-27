@@ -4,4 +4,10 @@
     <fullyQualifiedTypeName name="org.julian.app.hogar.Persona"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="clases.OrdenCompra"/>
+    <fullyQualifiedTypeName name="org.julian.entidades.Alumno"/>
+    <fullyQualifiedTypeName name="org.julian.entidades.Alumnointernacional"/>
+    <fullyQualifiedTypeName name="org.julian.entidades.Profesor"/>
+    <fullyQualifiedTypeName name="org.julian.entidades.Persona"/>
+    <fullyQualifiedTypeName name="clases.Empleado"/>
+    <fullyQualifiedTypeName name="clases.Gerente"/>
 </qualifiedTypeNameHistroy>
