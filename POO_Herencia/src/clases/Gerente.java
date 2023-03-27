@@ -1,7 +1,7 @@
 package clases;
 
 public class Gerente extends Empleado{
-	double presupuesto;
+	private double presupuesto;
 
 	public Gerente(String nombre, String apellido, String numeroFiscal, String direccion, double remuneracion,
 			int empleadoId, double presupuesto) {
@@ -19,9 +19,9 @@ public class Gerente extends Empleado{
 
 	@Override
 	public String toString() {
-		return "Gerente [presupuesto=" + presupuesto + ", remuneracion=" + remuneracion + ", empleadoId=" + empleadoId
-				+ ", nombre=" + nombre + ", apellido=" + apellido + ", numeroFiscal=" + numeroFiscal + ", direccion="
-				+ direccion + "]";
+		return "Gerente [presupuesto=" + presupuesto + ", remuneracion=" + getRemuneracion() + ", empleadoId=" + getEmpleadoId()
+				+ ", nombre=" + getNombre() + ", apellido=" + getApellido() + ", numeroFiscal=" + getNumeroFiscal() + ", direccion="
+				+ getDireccion() + "]";
 	}
 	
 	

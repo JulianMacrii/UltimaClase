@@ -1,7 +1,7 @@
 package clases;
 
 public class Persona {
-	String nombre, apellido, numeroFiscal, direccion;
+	private String nombre, apellido, numeroFiscal, direccion;
 	
 	
 

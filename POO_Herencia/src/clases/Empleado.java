@@ -2,8 +2,8 @@ package clases;
 
 public class Empleado extends Persona{
 	
-	double remuneracion;
-	int empleadoId;
+	private double remuneracion;
+	private int empleadoId;
 	public Empleado(String nombre, String apellido, String numeroFiscal, String direccion, double remuneracion,
 			int empleadoId) {
 		super(nombre, apellido, numeroFiscal, direccion);
@@ -31,8 +31,8 @@ public class Empleado extends Persona{
 	
 	@Override
 	public String toString() {
-		return "Empleado [remuneracion=" + remuneracion + ", empleadoId=" + empleadoId + ", nombre=" + nombre
-				+ ", apellido=" + apellido + ", numeroFiscal=" + numeroFiscal + ", direccion=" + direccion + "]";
+		return "Empleado [remuneracion=" + remuneracion + ", empleadoId=" + empleadoId + ", nombre=" + getNombre()
+				+ ", apellido=" + getApellido() + ", numeroFiscal=" + getNumeroFiscal() + ", direccion=" + getDireccion() + "]";
 	}
 	
 	
