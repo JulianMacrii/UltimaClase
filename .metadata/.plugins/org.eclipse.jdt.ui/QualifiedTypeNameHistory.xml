@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="org.julian.app.hogar.Persona"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="clases.OrdenCompra"/>
     <fullyQualifiedTypeName name="org.julian.entidades.Alumno"/>
     <fullyQualifiedTypeName name="org.julian.entidades.Alumnointernacional"/>
@@ -10,4 +9,9 @@
     <fullyQualifiedTypeName name="org.julian.entidades.Persona"/>
     <fullyQualifiedTypeName name="clases.Empleado"/>
     <fullyQualifiedTypeName name="clases.Gerente"/>
+    <fullyQualifiedTypeName name="org.julianmacri.pooclasesabstracta.mamiferos.Mamifero"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="Entidades.IProducto"/>
+    <fullyQualifiedTypeName name="Entidades.Producto"/>
+    <fullyQualifiedTypeName name="Entidades.Iphone"/>
 </qualifiedTypeNameHistroy>
